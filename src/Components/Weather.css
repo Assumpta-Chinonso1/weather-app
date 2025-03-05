@@ -78,28 +78,39 @@ font-weight: bold;
 }
 
 
-/* RESPONSIVENESS */
-@media (max-width: 700px) {
+@media (max-width: 600px) {
     .weather {
         padding: 30px;
-        width: 90%; /* Takes more width on small screens */
+        width: 90%; /* Ensures it doesn't touch screen edges */
     }
 
     .search-bar {
         flex-direction: row;
         gap: 8px;
         max-width: 300px;
+        width: 100%;
+        justify-content: center;
     }
 
     .search-bar input {
         height: 45px;
         font-size: 16px;
         padding-left: 15px;
+        flex: 1; /* Allows input to take available space */
+        min-width: 200px;
     }
 
     .search-bar img {
-        width: 45px;
-        padding: 12px;
+        width: 42px;
+        height: 42px;
+        padding: 10px;
+        border-radius: 50%;
+        background: #ebfffc;
+        cursor: pointer;
+        object-fit: contain; /* Ensures icon fits well */
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     .clear {
@@ -116,7 +127,7 @@ font-weight: bold;
     }
 
     .weather-data {
-        flex-direction: column; /* Stack items vertically on small screens */
+        flex-direction: column; /* Stack items on small screens */
         align-items: center;
         gap: 20px;
     }
