@@ -79,7 +79,7 @@ font-weight: bold;
 
 
 /* RESPONSIVENESS */
-@media (max-width: 600px) {
+@media (max-width: 700px) {
     .weather {
         padding: 30px;
         width: 95%; /* Takes more width on small screens */
