@@ -76,3 +76,59 @@ font-weight: bold;
     width: 26px;
     margin-top: 21px;
 }
+
+
+/* RESPONSIVENESS */
+@media (max-width: 600px) {
+    .weather {
+        padding: 30px;
+        width: 95%; /* Takes more width on small screens */
+    }
+
+    .search-bar {
+        flex-direction: row;
+        gap: 8px;
+        max-width: 300px;
+    }
+
+    .search-bar input {
+        height: 45px;
+        font-size: 16px;
+        padding-left: 15px;
+    }
+
+    .search-bar img {
+        width: 45px;
+        padding: 12px;
+    }
+
+    .clear {
+        width: 120px;
+        margin: 20px 0;
+    }
+
+    .temperature {
+        font-size: 60px;
+    }
+
+    .location {
+        font-size: 30px;
+    }
+
+    .weather-data {
+        flex-direction: column; /* Stack items vertically on small screens */
+        align-items: center;
+        gap: 20px;
+    }
+
+    .weather-data .col {
+        flex-direction: row;
+        align-items: center;
+        font-size: 18px;
+    }
+
+    .weather-data .col img {
+        width: 22px;
+        margin-top: 0;
+    }
+}
